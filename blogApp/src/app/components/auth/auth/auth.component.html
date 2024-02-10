@@ -1,0 +1,77 @@
+<div class="flex justify-center h-screen items-center overflow-hidden">
+  <div class="container">
+    <div class="cover" [ngClass]="{'rotate-active': isRegister}">
+      <div class="front">
+        <!-- <img
+          class=""
+          src="https://via.placeholder.com/600x400" 
+          alt=""
+        /> -->
+        <div class="text">
+          <span class="text-1"
+            >Welcome to Blog App</span
+          >
+          <span class="text-2 text-xs">Please login or signup</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms h-full">
+      <div class="form-content h-full">
+        <div class="login-form">
+          <h1 class="text-lg font-bold text-center pb-8">Login</h1>
+          <form [formGroup]="loginForm" (ngSubmit)="handleLogin()" class="example-form">
+            <mat-form-field class="w-full">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput formControlName="email" placeholder="Enter your email">
+            </mat-form-field>
+            <mat-form-field class="w-full custom-mat-field">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" formControlName="password" placeholder="Enter your password">
+            </mat-form-field>
+            <div>
+              <button style="padding: 1rem; background-color: #007bff; border: 2px solid #007bff; color: #fff; cursor: pointer; display: inline-block; font-size: 16px; font-weight: bold; text-align: center; text-decoration: none; transition: background-color 0.3s, border-color 0.3s;"
+          class="w-full py-5"
+          type="submit">
+    Login
+  </button>
+            </div>
+          </form>
+          <div class="mt-5 flex items-center gap-2 py-5 justify-center">
+            Don't have an account? <button (click)="togglePanel()" mat-button color="#007bff">Sign Up</button>
+          </div>
+        </div>
+        <div class="signup-form">
+          <h1 class="text-lg font-bold text-center pb-8">Sign Up</h1>
+          <form [formGroup]="registrationForm" (ngSubmit)="handleRegister()" class="example-form">
+            <div class="input-group">
+              <mat-form-field class="w-full">
+                <mat-label>Full Name</mat-label>
+                <input matInput formControlName="fullName" placeholder="Enter your full name">
+              </mat-form-field>
+            </div>
+            <div class="input-group">
+              <mat-form-field class="w-full">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Enter your email">
+              </mat-form-field>
+            </div>
+            <div class="input-group">
+              <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password" placeholder="Enter your password">
+              </mat-form-field>
+            </div>
+            <div class="input-group">
+              <button class="w-full py-5 custom-button" mat-raised-button color="primary" type="submit">Register</button>
+            </div>
+            
+          </form>
+        </div>
+        
+          <!-- <div class="flex items-center gap-2 mt-9 justify-center">
+            Already have an account? <button (click)="togglePanel()" mat-button color="#007bff">Login</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>

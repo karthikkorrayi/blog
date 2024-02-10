@@ -1,0 +1,48 @@
+/* CSS for center-aligning the form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CSS for the form */
+form {
+  width: 27rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #487181;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for the form fields */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* CSS for the form inputs and labels */
+.mat-label {
+  color: #4b5563;
+}
+
+.mat-input-element {
+  color: #4b5563;
+}
+
+/* CSS for the submit button */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2563eb;
+}

@@ -1,0 +1,29 @@
+.example-card {
+    max-width: 400px;
+    border: 5px solid #6d6d6d; /* Border color */
+  background-color: #487181; /* Background color */
+  border-radius: 0.5rem; /* Border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  }
+/* Custom styles for the mat-card */
+.custom-card {
+  border: 5px solid #ffffff; /* Border color */
+  background-color: #487181; /* Background color */
+  border-radius: 0.5rem; /* Border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Styles for the card header */
+
+
+/* Styles for the card content */
+.mat-card-content {
+  padding: 1rem;
+}
+
+/* Styles for the card actions */
+.mat-card-actions {
+  padding: 0.5rem;
+}
+
+  

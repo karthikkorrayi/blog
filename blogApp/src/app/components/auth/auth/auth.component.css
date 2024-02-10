@@ -1,0 +1,103 @@
+
+
+.container {
+  padding: 140px 50px;
+  background-color: #292929; 
+}
+
+.container .cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transform-origin: right;
+  transform-style: preserve-3d;
+}
+
+.container .rotate-active {
+  transform: rotateY(90deg);
+}
+
+.container .cover::before,
+.container .cover::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #007bff; /* Blue color for background */
+  opacity: 1;
+  z-index: 12;
+}
+
+.container .cover::after {
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.container .cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.container .cover .text {
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover .text .text-1,
+.cover .text .text-2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff; /* White color for text */
+  text-align: center;
+  line-height: normal;
+}
+
+.cover .text .text-2 {
+  font-size: 16px;
+}
+
+.container .form-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form {
+  width: calc(100% / 2 - 25px);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 16px; /* Adjust spacing between input fields */
+}
+
+.custom-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+}
+
+
+
+
+
+

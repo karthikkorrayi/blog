@@ -1,0 +1,57 @@
+/* Styles for the form */
+form {
+    max-width: 27rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #487181; /* Background color for the form */
+  }
+  
+  /* Styles for the form fields and labels */
+  .mat-form-field {
+    width: 50%;
+  }
+  
+  .mat-label {
+    color: #5a5a5a; /* Text color for the labels */
+  }
+  
+  /* Styles for the input fields and text areas */
+  input.mat-input,
+  textarea.mat-input {
+    color: #333333; /* Text color for the input fields and text areas */
+    border: 1px solid #dddddd; /* Border color for the input fields and text areas */
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  
+  /* Styles for the submit button */
+  button[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff; /* Background color for the submit button */
+    color: #ffffff; /* Text color for the submit button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Hover background color for the submit button */
+  }
+  
+  /* Styles for the mat-raised-button */
+  .mat-raised-button {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #007bff; /* Background color for the mat-raised-button */
+    color: #ffffff; /* Text color for the mat-raised-button */
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mat-raised-button:hover {
+    background-color: #0056b3; /* Hover background color for the mat-raised-button */
+  }
+  

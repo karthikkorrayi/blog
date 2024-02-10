@@ -1,0 +1,14 @@
+<mat-toolbar class="flex justify-between custom-toolbar" color="primary">
+  <!-- <span class="brand">Blog Share Hub</span> -->
+
+  <div class="buttons-container">
+    <button disabled class="example-icon" aria-label="User Full Name">
+      {{ user?.fullName }}
+    </button>
+
+    <span class="brand">'s Blog Share Hub</span>
+    <button mat-icon-button class="example-icon" aria-label="Logout" (click)="handleLogout()">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

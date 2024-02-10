@@ -1,0 +1,66 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ blog.user.title }}</mat-card-title>
+      <mat-card-subtitle>
+        {{blog.user.fullName}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="h-[22rem] object-cover"
+      mat-card-image
+      [src]="blog.image"
+      alt="photo incomplete"
+    />
+    <mat-card-content>
+      <h2 class="pt-2 font-semibold">{{blog.title}}</h2>
+      <p >
+        {{ blog.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="flex justify-between">
+      <div>
+        <button
+          mat-icon-button
+          color="primary"
+          aria-label="Example icon button with a heart icon"
+          (click)="handleBlogLike(blog.id)"
+        >
+        @if(blog.likes?.includes(user.id)){
+          <mat-icon>favorite</mat-icon>
+        }
+        @else{
+          <mat-icon>favorite_border</mat-icon>
+        }
+          
+        </button>
+  
+        <button
+          mat-icon-button
+          color="accent"
+          aria-label="Example icon button with a heart icon"
+          (click)="openUpdateBlogModel()"
+        >
+          <mat-icon >edit</mat-icon>
+        </button>
+        <!-- <button
+          (click)="openDialog()"
+          mat-icon-button
+          color="accent"
+          aria-label="Example icon button with a heart icon"
+        >
+          <mat-icon>share</mat-icon>
+        </button> -->
+      </div>
+      <div>
+        <button
+          mat-icon-button
+          color="accent"
+          aria-label="Example icon button with a heart icon"
+          (click)="deleteBlog(blog.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+  

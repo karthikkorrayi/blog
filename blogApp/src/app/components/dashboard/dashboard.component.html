@@ -1,0 +1,16 @@
+<div class="pb-5">
+  <div class="flex justify-center flex-wrap gap-5">
+    @for(item of blogs; track 1){
+    <app-blog-card [blog]="item" />
+    } @empty{ empty... click on + button to add blogs }
+  </div>
+
+  <div class="fixed bottom-10 right-10">
+    <button
+      (click)="openCreateBlogModel()"
+      mat-fab
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>

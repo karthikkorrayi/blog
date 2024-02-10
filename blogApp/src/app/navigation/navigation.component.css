@@ -1,0 +1,26 @@
+/* .example-spacer {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .custom-toolbar {
+    background-color: #007bff; /* Primary color for the toolbar */
+    color: #ffffff; /* Text color for the toolbar */
+  }
+  
+  .brand {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the brand text bold */
+  }
+  
+  .buttons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .example-icon {
+    font-size: 1.5rem;
+    color: #ffffff; /* Text color for the buttons */
+    margin-left: 350px; /* Adjust spacing between buttons */
+    margin-right: 7px; /* Adjust spacing between buttons */
+  }
+  
